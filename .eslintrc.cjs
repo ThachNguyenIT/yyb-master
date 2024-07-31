@@ -5,9 +5,13 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "react-app"
   ],
-  rules: ["no-unused-vars", "off"],
+  rules: {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
